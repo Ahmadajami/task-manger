@@ -1,0 +1,11 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/src/models/**.g.dart
+    - lib/src/rest_client/api_client.g.dart
+    - lib/src/dio/interceptors/token_interceptor.dart
+
+linter:
+  rules:
+    public_member_api_docs: false

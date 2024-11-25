@@ -1,0 +1,22 @@
+name: user_repository
+description: User repository.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  api_client:
+    path: ../api_client
+  app_core:
+    path: ../app_core
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.7.1
+  very_good_analysis: ^5.1.0
