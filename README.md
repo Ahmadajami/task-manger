@@ -32,143 +32,6 @@ The app communicates with [Dummy JSON API](https://dummyjson.com/) for handling 
 > **Note:** The `todo` ID must be sent as a **String** during requests but is returned as an **Integer**, requiring special handling in the code. This was a notable challenge during development.
 
 ---
-
-## 📂 Folder Structure
-This app follows a **package-based architecture** to ensure scalability and maintainability:
-├── analysis_options.yaml
-├── assets
- └── fonts
-     └── Cera-Pro
-         ├── Cera-Pro-Bold.otf
-         └── Cera-Pro-Medium.otf
-├── .gitignore
-├── lib
- ├── add_todo
-  └── add_todo.dart
- ├── app
-  ├── app_bloc_observer.dart
-  ├── app_bootstrap.dart
-  ├── app.dart
-  ├── extensions.dart
-  └── view
-      ├── app.dart
-      └── cubit
-          ├── app_cubit.dart
-          └── app_state.dart
- ├── home
-  └── home.dart
- ├── login
-  ├── cubit
-   ├── login_cubit.dart
-   └── login_state.dart
-  └── login_screen.dart
- ├── main.dart
- ├── routing
-  ├── fab_cubit
-   └── fab_cubit.dart
-  ├── routes.dart
-  └── wrapper.dart
- ├── setting
-  ├── setting.dart
-  └── view
-      ├── theme
-       └── theme_screen.dart
-      └── widgets.dart
- └── todo
-     ├── bloc
-      ├── todo_bloc.dart
-      ├── todo_event.dart
-      └── todo_state.dart
-     ├── cubit
-      ├── storage_todo_cubit.dart
-      └── storage_todo_state.dart
-     └── todo.dart
-├── LICENSE
-├── .metadata
-├── packages
- ├── api_client
-  ├── analysis_options.yaml
-  ├── CHANGELOG.md
-  ├── lib
-   ├── api_client.dart
-   └── src
-       ├── dio
-        ├── dio.dart
-        └── interceptors
-            └── token_interceptor.dart
-       └── rest_client
-           ├── api_client.dart
-           └── api_client.g.dart
-  ├── LICENSE
-  ├── pubspec.yaml
-  ├── README.md
-  └── test
-      └── api_client_test.dart
- ├── app_core
-  ├── analysis_options.yaml
-  ├── CHANGELOG.md
-  ├── lib
-   ├── app_core.dart
-   └── src
-       ├── failures.dart
-       ├── models
-        └── forms
-            └── sign_in
-                ├── sign_in_form.dart
-                └── sign_in_form.g.dart
-       ├── storage
-        └── storage.dart
-       └── theme
-           ├── app_theme_cubit.dart
-           └── theme.dart
-  ├── LICENSE
-  ├── pubspec.yaml
-  ├── README.md
-  └── test
-      └── app_core_test.dart
- ├── todo_repository
-  ├── analysis_options.yaml
-  ├── CHANGELOG.md
-  ├── lib
-   ├── src
-    ├── failures.dart
-    ├── models
-     ├── list
-      ├── todo_list_model.dart
-      └── todo_list_model.g.dart
-     ├── todo_model.dart
-     └── todo_model.g.dart
-    └── todo_repository.dart
-   └── todo_repository.dart
-  ├── LICENSE
-  ├── pubspec.yaml
-  ├── README.md
-  └── test
-      └── todo_repository_test.dart
- └── user_repository
-     ├── analysis_options.yaml
-     ├── CHANGELOG.md
-     ├── lib
-      ├── src
-       ├── failures.dart
-       ├── models
-        ├── user.dart
-        └── user.g.dart
-     │  └── user_repository.dart
-     │ └── user_repository.dart
-     ├── LICENSE
-     ├── pubspec.yaml
-     ├── README.md
-     └── test
-         └── user_repository_test.dart
-├── pubspec.lock
-├── pubspec.yaml
-├── README.md
-└── test
-└── widget_test.dart
-
----
-
 ## 💡 Challenges Faced
 
 - **Inconsistent Data Types in Dummy JSON API:**  
@@ -181,6 +44,7 @@ This app follows a **package-based architecture** to ensure scalability and main
 
 ---
 
+---
 ## 📦 Dependencies
 
 Here are the key dependencies used in the project:
@@ -196,6 +60,7 @@ dependencies:
 dev_dependencies:
   very_good_analysis: ^4.0.0
 ```
+---
  ## 🛠️ Setup Instructions
 
 Clone the repository:
