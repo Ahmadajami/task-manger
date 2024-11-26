@@ -12,6 +12,9 @@ Task Manager App built with **Flutter** that allows users to manage their tasks 
 - **State Management:** Manage state using `flutter_bloc`.
 - **Network Requests:** API integration with `retrofit` and `dio`.
 - **Secure Storage:** Store sensitive data like tokens securely using `flutter_secure_storage`.
+- **Custom Page Transitions:** Smooth, animated page transitions for a polished user experience.
+- **Error Handling:** zoneGuarded Ready for any Crash Analytics.
+ 
 
 ---
 
