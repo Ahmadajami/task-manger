@@ -14,10 +14,13 @@ Task Manager App built with **Flutter** that allows users to manage their tasks 
 - **Secure Storage:** Store sensitive data like tokens securely using `flutter_secure_storage`.
 - **Custom Page Transitions:** Smooth, animated page transitions for a polished user experience.
 - **Error Handling:** zoneGuarded Ready for any Crash Analytics.
- 
-
 ---
 
+## 🧪 Testing
+- The app is currently under development, and testing is still in progress. We are using the Mockito package to mock dependencies and test the app's components effectively.
+- **Mockito** is being used for mocking services, network calls, and data repositories.
+- **Currently**, tests are being developed for core features such as task management, API integration, and state management.
+---
 ## 🛠️ Technologies Used
 
 - **Flutter Bloc:** For state management, ensuring a reactive and scalable approach.
