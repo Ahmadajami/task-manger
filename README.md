@@ -5,7 +5,7 @@ Task Manager App built with **Flutter** that allows users to manage their tasks 
 ---
 ## 🗂️ File Structure 
 
-** 📦 Flutter Package-Based Architecture:**
+**📦 Flutter Package-Based Architecture:**
 Package-based architecture is a powerful approach to structuring large-scale Flutter applications. It promotes code reusability, maintainability, and testability by breaking down the application into smaller, independent packages.
 
 ---
