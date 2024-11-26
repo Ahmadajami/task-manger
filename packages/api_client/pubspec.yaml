@@ -14,6 +14,11 @@ dependencies:
     sdk: flutter
   pretty_dio_logger: ^1.4.0
   retrofit: ^4.4.1
+  todo_repository:
+    path: ../todo_repository
+  user_repository:
+    path: ../user_repository
+
 
 
 

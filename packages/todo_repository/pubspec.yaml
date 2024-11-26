@@ -1,5 +1,5 @@
-name: user_repository
-description: User repository.
+name: todo_repository
+description: Todo repository.
 version: 1.0.0
 publish_to: none
 
@@ -13,7 +13,6 @@ dependencies:
     path: ../app_core
   flutter:
     sdk: flutter
-
   json_annotation: ^4.9.0
 
 dev_dependencies:

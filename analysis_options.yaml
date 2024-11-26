@@ -3,3 +3,4 @@ linter:
   rules:
     public_member_api_docs: false
     omit_local_variable_types: false
+    avoid_double_and_int_checks: true

@@ -2,6 +2,7 @@
 import 'package:api_client/api_client.dart';
 import 'package:app_core/app_core.dart';
 import 'package:user_repository/src/failures.dart';
+import 'package:user_repository/src/models/user.dart';
 
 class _UserRepositoryConstants {
   static const String userKey = 'auth';
@@ -37,6 +38,7 @@ class UserRepository {
 
   Future<void> _initialize() async {
     await _loadInitialUser();
+
   }
 
   Future<void> _loadInitialUser() async {
@@ -54,11 +56,15 @@ class UserRepository {
         jsonDecode(storedUser) as Map<String, dynamic>,
       );
       _updateUser(userModel);
+      dio.interceptors.insert(
+          0, TokenInterceptor(token: userModel.accessToken)
+      ,);
     } catch (_) {
       _updateUser(UserModel.none);
       throw UserFailure.fromStorage();
     }
   }
+
 
   Future<void> login(SignInForm form) async {
     try {
@@ -70,6 +76,7 @@ class UserRepository {
           jsonEncode(user.toJson()),
         ),
       );
+      dio.interceptors.insert(0, TokenInterceptor(token: user.accessToken));
     } on DioException {
       throw UserFailure.fromSignIn();
     }
@@ -81,6 +88,7 @@ class UserRepository {
       unawaited(
         _storageService.deleteData(_UserRepositoryConstants.userKey),
       );
+      dio.interceptors.removeAt(0);
     } catch (_) {
       throw UserFailure.fromSignOut();
     }
