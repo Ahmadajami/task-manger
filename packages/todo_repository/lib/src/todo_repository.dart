@@ -98,7 +98,7 @@ class TodoRepository {
         TodoModel.fromJson(json as Map<String, dynamic>),).toList();
   }
 
-  /// Toggle the completion state of a todo by its ID.
+  /// Toggle the completion state of a todo by its todo String.
   Future<void> toggleTodo({
     required String todo,
   }) async {
