@@ -1,3 +1,3 @@
 ---
-Todo repo
+Todo Repository 
 ---
